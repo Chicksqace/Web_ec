@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>购物车</title>
+		<link rel="stylesheet" type="text/css" href="css/public.css" />
+		<link rel="stylesheet" type="text/css" href="css/cart.css" />
+	</head>
+
+	<body>
+		<!-- 主体 -->
+		<div class="box1200">
+			<table class="my-cart">
+				<thead>
+					<tr>
+						<th width="120">
+							<label>
+								<input type="checkbox" name="checkAll" /> <span>全选</span>
+							</label>
+						</th>
+						<th colspan="2" width="620">商品信息</th>
+						<th width="158">单价（元）</th>
+						<th width="120">数量</th>
+						<th width="110">小计（元）</th>
+						<th width="72">操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="shopname">
+						<td colspan="6">
+							<label>
+								<input type="checkbox" name="name" />
+								<span class="name">胖几的衣服店哦~</span>
+							</label>
+						</td>
+					</tr>
+					<tr class="cart-item">
+						<td>
+							<label>
+								<input type="checkbox" name="det" />
+								<img src="img/cartshop1.png" alt="" />
+							</label>
+						</td>
+						<td class="title">
+							【辣妈程程呀】021春季新款显瘦减龄针织开衫吊带连衣裙两件套
+						</td>
+						<td class="size">
+							颜色：红色外套加黑色裙尺码：均码（建议80-135斤）
+						</td>
+						<td class="price">79.00</td>
+						<td>
+							<a class="min" id="max" href="#">-</a>
+							<input type="text" maxlength="4" value="1" class="text_box nums" readonly />
+							<a class="max" id="dow" href="#">+</a>
+						</td>
+						<td class="subtotal">79.00</td>
+						<td><a href="#" class="delete">删除</a></td>
+					</tr>
+					<tr class="shopname">
+						<td colspan="6">
+							<label>
+								<input type="checkbox" name="name" />
+								<span class="name">另外一家胖几的店</span>
+							</label>
+						</td>
+					</tr>
+					<tr class="cart-item">
+						<td>
+							<label>
+								<input type="checkbox" name="det" />
+								<img src="img/cartshop1.png" alt="" />
+							</label>
+						</td>
+						<td class="title">
+							【辣妈程程呀】021春季新款显瘦减龄针织开衫吊带连衣裙两件套
+						</td>
+						<td class="size">
+							颜色：红色外套加黑色裙尺码：均码（建议80-135斤）
+						</td>
+						<td class="price">79.00</td>
+						<td>
+							<a class="min" id="max" href="#">-</a>
+							<input type="text" maxlength="4" value="1" class="text_box nums" readonly />
+							<a class="max" id="dow" href="#">+</a>
+						</td>
+						<td class="subtotal">79.00</td>
+						<td><a href="#" class="delete">删除</a></td>
+					</tr>
+					<tr class="shopname">
+						<td colspan="6">
+							<label>
+								<input type="checkbox" name="name" />
+								<span class="name">最后一家胖几的店</span>
+							</label>
+						</td>
+					</tr>
+					<tr class="cart-item">
+						<td>
+							<label>
+								<input type="checkbox" name="det" />
+								<img src="img/cartshop1.png" alt="" />
+							</label>
+						</td>
+						<td class="title">
+							【辣妈程程呀】021春季新款显瘦减龄针织开衫吊带连衣裙两件套
+						</td>
+						<td class="size">
+							颜色：红色外套加黑色裙尺码：均码（建议80-135斤）
+						</td>
+						<td class="price">79.00</td>
+						<td>
+							<a class="min" id="max" href="#">-</a>
+							<input type="text" maxlength="4" value="1" class="text_box nums" readonly />
+							<a class="max" id="dow" href="#">+</a>
+						</td>
+						<td class="subtotal">79.00</td>
+						<td><a href="#" class="delete">删除</a></td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="no-data">
+				暂时商品
+			</div>
+			<table class="my-cart cart-operation">
+				<tbody>
+					<tr>
+						<td width="105">
+							<label>
+								<input type="checkbox" name="checkAll" /> <span>全选</span>
+							</label>
+						</td>
+						<td width="50">
+							<a href="#" class="detleteall">删除</a>
+						</td>
+						<td width="105">
+							<a href="#">清空售罄商品</a>
+						</td>
+						<td width="70"><a href="#">移入收藏夹</a></td>
+						<td class="total">
+							共有&nbsp;<span class="shopnums">0</span>&nbsp;件商品，总计：<b id="total">￥<span>0.00</span></b>
+						</td>
+						<td width="122" class="pay">
+							<a href="#">去付款</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<!-- 页脚 -->
+
+	</body>
+</html>

@@ -1,0 +1,130 @@
+.cart-title{
+	margin-bottom:20px;
+}
+.cart-title h2{
+	font-size: 1.2em;
+}
+.cart-title h2::first-letter{
+	font-size:1.5em;
+	font-weight:bold;
+	color:#FF6900;
+}
+.cart-title-address{
+	margin-left: 1em;
+	color:#8ab700;	
+}
+.cart-tb{
+	table-layout: fixed;
+	width:100%;
+}
+.cart-tb col:nth-child(1){
+	width:12%;
+}
+.cart-tb col:nth-child(2){
+	width:22%;
+}
+.cart-tb col:nth-child(3){
+	width:20%;
+}
+.cart-tb col:nth-child(4){
+	width:10%;
+}
+.cart-tb col:nth-child(5){
+	width:16%;
+}
+.cart-tb col:nth-child(6){
+	width:20%;
+}
+.cart-tb col:nth-child(6){
+	width:10%;
+}
+.cart-tb th,.cart-tb td{
+	font-weight: normal;
+	text-align: left;
+}
+.cart-tb input[type=checkbox],.sumbox input[type=checkbox]{
+	margin:0 10px 0 10px;
+}
+.cart-tb  thead{
+	height: 36px;
+	border-bottom:1px solid #eaeaea;
+	background-color: #f8f8f8;
+	color:#666;
+}
+.cart-tb .shopname td{
+	padding-top:12px;
+	height:36px;
+	border-bottom:1px solid #e3e3e3;
+}
+.cart-item{
+	height:120px;
+	border-bottom:1px dashed #eaeaea;
+}
+.cart-item img{
+	width:76px;
+	height:76px;
+	border:1px solid #eaeaea;
+	padding:4px;
+}
+.cart-tb-ck img,.cart-tb-ck input{
+	vertical-align: middle;
+}
+.cart-item .cart-tb-size{
+	color:#999;
+}
+.cart-item .cart-tb-price,.cart-item .cart-tb-sum{
+	font-weight: bold;
+}
+.cart-item .cart-tb-sum{
+	color:#FF6900;
+}
+.cart-tb-quantity input{
+	width:60px;
+	height:22px;
+	text-align: center;
+	outline: none;
+	border:none;
+	background-color: #eaeaea;
+}
+.cart-item .cart-tb-action a{
+	color:#999;
+}
+.cart-item .cart-tb-action a:hover{
+	color:#333;
+	text-decoration: underline;
+}
+.sumbox{
+	height:60px;
+	padding:10px 10px 10px 0;
+	border-top:1px solid #eaeaea;
+	margin-top:20px;
+	background-color: #f8f8f8;
+	line-height: 60px;
+}
+.sumbox label{
+	margin-right:20px;
+}
+.amount-sum,.price-sum{
+	display:inline-block;
+	margin-right:20px;
+}
+.amount-sum em,.sum-price{
+	font-size:20px;
+	font-weight: 600;
+	color:#FF6900;
+}
+.buy-btn{
+	display:inline-block;
+	width:90px;
+	height:44px;
+	border-radius:22px;
+	margin-right:20px;	
+	background-color:#FF6900;
+	font-size:18px;
+	color:#fff;
+	text-align: center;
+	line-height: 44px;
+}
+.buy-btn.btn-disabled{
+	background-color:#999;
+}

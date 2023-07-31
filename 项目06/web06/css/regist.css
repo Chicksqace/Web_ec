@@ -1,0 +1,93 @@
+.reg-form-box{
+	background: #f5f5f5;
+	padding: 30px 0 50px;
+}
+.box1200{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.reg-form-box h2 {
+	padding-left:12px;
+	border-left:3px solid #30B30E;
+	margin-bottom: 35px;
+    font-size: 1.2em;
+    color: #666;
+    line-height: 16px;
+}
+.reg-form-box h2::first-letter{
+	font-size:1.5em;
+	font-weight:bold;
+	color:#FF6900;
+}
+
+.reg-form-box form{
+	width: 600px;
+	margin:0 auto;
+}
+.reg-form-box input[type="text"],
+.reg-form-box input[type="password"], 
+.reg-form-box input[type="tel"], 
+.reg-form-box select {
+    width: 398px;
+    height: 38px;    
+	border: 1px solid rgb(204, 204, 204);
+    padding: 0 10px;
+}
+.reg-form-box .form-item {
+    margin-bottom: 24px;
+}
+.reg-form-box .form-label{
+	float:left;
+    width: 120px;
+    padding-top:8px;
+    margin-right: 10px;
+	text-align: right;
+}
+.reg-form-box .form-label::before{
+    content: "*";
+	display: inline-block; 
+	margin-right: 4px;
+    font-weight: bold;
+    color: #ff0000;
+	vertical-align: middle;
+}
+.reg-form-box input[type=radio]{
+	width: 16px;
+	height: 16px;
+	border: 1px solid #aaa;
+	border-radius:50%;
+	vertical-align: middle;
+}
+.reg-form-box .form-item .sex-label{
+	display: inline-block;
+	padding-top:8px;
+}
+
+.reg-form-box select{
+	box-sizing: content-box;
+	color:#aaa;
+	margin-bottom: 24px;
+}
+.reg-form-box .noleft{
+	margin-left:130px;
+}
+.reg-form-box input[type=checkbox]{
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.reg-form-box .regist-btn{
+	width: 160px;
+	height: 40px;
+	border:none;
+	background-color: #30B30E;
+	font-size:16px;
+	letter-spacing: 0.1em;
+	color:#fff;
+	cursor:pointer;
+}
+

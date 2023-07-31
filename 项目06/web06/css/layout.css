@@ -1,0 +1,313 @@
+/* 详情页图片列表与详情图版块 */
+.goods-img-box,.goods-img-list,.goods-img-show,.goods-intro{
+	float:left;
+}
+.goods-img-list li{
+	border: 1px solid #c9c9c9;
+	margin:0 4px 8px;
+}
+.goods-img-list li.active{
+	border: 1px solid rgb(138, 184, 0);
+}
+.goods-img-list img{
+	width: 82px;
+	height: 82px;
+}
+.goods-img-show{
+	width: 500px;
+	height: 500px;
+	border: 1px solid rgb(201, 201, 201);
+}
+.goods-img-show img{
+	width:100%;
+}
+/* 详情页加入购物车版块 */
+.goods-intro{
+	width: 570px;
+	margin-left: 35px;
+}
+.goods-intro dl{
+	margin-top:18px;
+}
+/*  商品标题模块  */
+.intro-name h1 {
+  font: 800 18px/34px "Microsoft YaHei";
+  color: #4c4c4c;
+}
+.intro-name p {
+  font-size: 14px;
+  color: #ff6900;
+  line-height: 26px;
+}
+/*  商品价格模块  */
+.intro-price dt,.intro-price dd {
+	display: inline-block;
+}
+.intro-price .drop {
+	padding: 0 8px;
+	margin-right: 10px;
+	background-color: #ff6900;
+	font-size: 14px;
+	color: #fff;
+	vertical-align: top;
+	line-height: 26px;
+}
+.intro-price .price {
+  font: 800 26px/26px "Microsoft YaHei";
+  color: #ff6900;
+}
+.intro-price .price span {
+	margin-left: 10px;
+	font-size:16px;
+	color: #4c4c4c;
+	text-decoration: line-through;
+}
+/* 活动信息模块 */
+.intro-gifts {
+	padding-bottom:18px;
+	border-bottom: 1px solid #e0e0e0;
+}
+.intro-gifts-info {
+	width: 450px;
+	font-size: 12px;
+	color: #4c4c4c;
+	line-height: 16px;
+}
+.intro-gifts-info span {
+	/* 将内联元素转为inline-block，才能应用宽度及边距设置 */
+	display: inline-block; 
+	width: 48px;
+	border: 1px solid #8ab700;
+	margin-right: 10px;
+	font-size: 12px;
+	color: #8ab700;
+	text-align: center;
+	line-height: 14px;
+}
+/* 规格选择模块 */
+.intro-choose{
+	font-size:12px;
+	color:#4c4c4c;
+	line-height: 18px;
+}
+.intro-choose dt,.intro-choose dd {
+	display: inline-block;
+}
+.intro-choose-label{
+	width:80px;
+	padding:5px 0;
+	vertical-align: top;
+	font-size:14px;
+}
+.intro-choose-items{
+	width:450px;
+}
+.intro-choose-items a {
+	display: inline-block;
+	padding: 5px 15px;
+	border: 1px solid #e5e5e5;
+	margin:0 10px 10px 0;
+	color: #626252;
+	text-align: center;
+}
+.intro-choose-items a:hover{
+	padding: 4px 14px;
+	border: 2px solid #90c000;
+}
+.intro-choose-items a.active{
+	padding: 4px 14px;
+	border: 2px solid #90c000;
+	background: url(../images/icon.gif) no-repeat 100% 14px;
+}
+/* 数量选择-加入购物车模块 */
+.intro-amount dt,.intro-amount dd{
+	display:inline-block;
+}
+.intro-amount-label{
+	width: 80px;
+	height: 30px;
+	font-size:14px;
+	vertical-align: top;
+	line-height: 30px;
+}
+.intro-amount-num{
+	border:1px solid #cdcdcd;
+	margin-right:18px;
+	font-size:14px;
+}
+.btn-reduce,.btn-add{
+	display:inline-block;
+	width:30px;
+	height:30px;
+	text-align: center;
+	line-height: 30px;
+}
+.btn-reduce{
+	border-right:1px solid #cbcbcb;
+}
+.btn-add{
+	border-left:1px solid #cbcbcb;
+}
+.btn-disabled{
+	background-color: #f3f3f3;
+	color:#ccc;
+	cursor:default;
+}
+.intro-amount-num input {
+    width: 40px;
+	border:none;
+	outline:none;
+    color: #626262;
+    text-align: center;
+}
+.btn-addcart{
+	display: inline-block;
+	width:144px;
+	height:48px;
+	margin:18px 0 0 86px;
+	background-color: #ff6900;
+	font-size: 18px;
+	font-weight: 600;
+	color:#fff;
+	text-align: center;
+	line-height: 48px;
+}
+/* 配送方式模块 */
+.intro-db-info{
+	width:40px;
+	padding-left:30px;
+	border: 1px solid #91c103;
+	margin-left:86px;
+	background:#91c103 url(../images/icons1.gif) no-repeat left center;
+	font-size: 12px;
+    color: #fff;
+    line-height: 23px;
+}
+/* 温馨提示模块 */
+.intro-prompt{
+	color: #79a000;
+	font-size: 12px;
+	line-height: 18px;
+}
+
+/* 浏览记录版块 */
+.goods-record{
+	font-size: 12px;
+	color: #6b6b56;
+	line-height: 1.5;
+}
+.goods-record-header{
+	height:35px;
+	padding:0 10px 0 22px;
+	background-color: #fafafa;
+}
+.goods-record-header h2 {
+    font: 400 16px/35px "微软雅黑";
+}
+.goods-record-header a {
+	padding: 0 8px;
+    border: 1px solid #8ab700;
+	margin-top: 7px;
+    color: #8ab700;
+}
+.goods-record-list li {
+    padding: 10px;
+}
+.goods-record-list li+li {
+    border-top: 1px solid #efefe8;
+}
+.goods-record-list img{
+	margin-right: 5px;
+}
+.goods-m-img{
+	width: 70px;
+	height: 70px;
+}
+.goods-record-info{
+	width: 110px;
+}
+.goods-m-name{
+	margin-top: 5px;
+	overflow: hidden;
+	color: #3e4141;
+    text-overflow: clip;
+}
+.goods-m-price {
+    color: #ff6900;
+    line-height: 26px;
+}
+/* 关联推荐版块 */
+/* 标题模块 */
+.goods-header{
+	height: 33px;
+    background-color: #fafafa;
+    border-bottom: 1px solid #efefe7;
+}
+.goods-header a{
+	/*以下两句代码设置元素从原位置向上移动6px*/
+	position: relative;
+	top:-6px;
+	display:block;
+	width: 118px;
+	height: 44px;
+	padding: 0 4px 0 0;
+	background: url(../images/detail_icon.png) right -194px no-repeat;
+	font-size: 14px;
+	font-weight: 400;
+	color: #fff;
+	text-align: center;
+	line-height: 44px;
+}
+
+.goods-compose-body{
+	height: 220px;
+	margin:20px;
+}
+/* 商品列表模块 */
+.goods-compose-list ul{
+	width:640px;
+}
+.goods-compose-list li{
+	float:left;
+	width:120px;
+	text-align: center;
+	font-size:12px;
+}
+.goods-compose-list li.plus {
+    float: left;
+    width: 14px;
+    height: 14px;
+	margin: 45px 18px 0;
+	background: url(../images/icons2.gif) 0 -204px no-repeat;
+    text-align: center;
+}
+.goods-compose-list img{
+	width: 97px;
+	height: 97px;
+}
+.goods-compose-list li input{
+	width: 18px;
+	height: 18px;
+	margin-top:10px;
+}
+/* 统计加购模块 */
+.goods-compose-add{
+	width: 200px;
+	height: 170px;
+	padding:30px 0 0 60px;
+    border-left: 1px solid #e7e7e7;
+    margin: 20px 0;
+}
+.goods-compose-add p{
+	height: 120px;
+}
+.goods-compose_btn a {
+    display: block;	
+    width: 122px;
+    height: 30px;
+	background-color: #ff6900;
+	font-weight: 600;
+	color:#fff;
+	text-align: center;
+	line-height: 30px;
+}

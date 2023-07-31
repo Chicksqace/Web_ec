@@ -1,0 +1,521 @@
+/*商品详情*/
+.box1200 {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.path15 {
+	width: 1200px;
+	color: #959595;
+	line-height: 40px;
+}
+
+.goods-item {
+	display: flex;
+}
+
+.product-img img {
+	border: 1px solid #c9c9c9;
+	display: block;
+	margin: 0 3px 8px;
+	width: 82px;
+	height: 82px;
+}
+
+.showimg {
+	position: relative;
+	width: 500px;
+	height: 500px;
+	border: 1px solid #f5f5f5;
+}
+
+.show {
+	width: 500px;
+	height: 500px;
+	border: 1px solid rgb(201, 201, 201);
+}
+
+.showbox {
+	position: absolute;
+	top: 0;
+	left: 0;
+	cursor: move;
+	width: 175px;
+	height: 175px;
+	background: rgba(255, 255, 255, 0.4);
+	border: 1px solid rgb(201, 201, 201);
+	display: none;
+}
+
+.showlarge {
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	left: 510px;
+	width: 500px;
+	height: 500px;
+	border: 1px solid rgb(201, 201, 201);
+	display: none;
+	background: #fff;
+	z-index: 2;
+}
+
+.showlarge img {
+	width: 1000px;
+	height: 1000px;
+	position: absolute;
+	max-width: 950px;
+}
+
+.good15_intro {
+	width: 570px;
+	margin-left: 35px;
+}
+
+.good15_intro .intro_name h1 {
+	font: 800 18px/34px "Microsoft YaHei";
+	color: #4c4c4c;
+}
+
+.good15_intro .intro_name p {
+	font-size: 14px;
+	color: #ff6900;
+	line-height: 26px;
+}
+
+
+.good15_intro .intro_sales {
+	border-bottom: 1px solid #e0e0e0;
+	padding: 18px 0;
+}
+
+.intro_sales .intro_price {
+	margin: 0 0 18px;
+}
+
+.intro_sales .intro_price p span {
+	vertical-align: middle;
+}
+
+.intro_price .drop {
+	color: #fff;
+	font-size: 14px;
+	background-color: #ff6900;
+	line-height: 26px;
+	padding: 0 8px;
+	margin-right: 10px;
+}
+
+.intro_price .price {
+	font: 800 26px/26px "Microsoft YaHei";
+	color: #ff6900;
+}
+
+.intro_price .o-price {
+	font: 800 16px/26px "Microsoft YaHei";
+	color: #4c4c4c;
+	margin-left: 10px;
+	text-decoration: line-through;
+}
+
+
+.good15_intro .intro_app dl {
+	width: 125px;
+	height: 26px;
+	position: relative;
+	z-index: 1;
+	background: #ff6900;
+	cursor: pointer;
+}
+
+.good15_intro .intro_app dl dt a {
+	width: 97px;
+	height: 26px;
+	font-size: 14px;
+	color: #fff;
+	padding-left: 28px;
+	line-height: 26px;
+	text-decoration: none;
+}
+
+.good15_intro .intro_app dl dd {
+	position: absolute;
+	z-index: 20;
+	left: 0;
+	top: 26px;
+	width: 220px;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	text-align: center;
+	padding-bottom: 10px;
+	display: none;
+}
+
+.good15_intro .intro_app dl dd p {
+	background-color: #f4f4f4;
+	line-height: 30px;
+}
+
+.good15_intro .intro_app dl dd img {
+	width: 200px;
+}
+
+.good15_intro .intro_app:hover dd {
+	display: block;
+}
+
+
+.good15_intro .intro_gifts dl {
+	margin-top: 10px;
+}
+
+.good15_intro .intro_gifts dl dt {
+
+	width: 450px;
+	color: #4c4c4c;
+	line-height: 16px;
+	font-size: 12px;
+}
+
+.good15_intro .intro_gifts dl dt span {
+	border: 1px solid #8ab700;
+	color: #8ab700;
+	line-height: 14px;
+	width: 48px;
+	text-align: center;
+	font-size: 12px;
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.good15_norm {
+	margin-top: 15px;
+	font-size: 12px;
+}
+
+.good15_norm dl {
+	padding-bottom: 10px;
+}
+
+.good15_norm dl dt {
+	float: left;
+	width: 65px;
+	color: #4c4c4c;
+	line-height: 30px;
+}
+
+.good15_norm dl dd {
+	float: right;
+	width: 505px;
+	color: #4c4c4c;
+	line-height: 30px;
+}
+
+.good15_norm dl dd ul li {
+	display: inline-block;
+	padding: 1px;
+	margin: 0 10px 10px 0;
+	vertical-align: middle;
+}
+
+.good15_norm dl dd ul li a {
+	min-width: 10px;
+	border: 1px solid #e5e5e5;
+	display: inline-block;
+	padding: 5px 15px;
+	text-align: center;
+	text-decoration: none;
+	white-space: nowrap;
+	line-height: 18px;
+	color: #626252;
+}
+
+.good15_norm dl dd ul a.propon {
+	min-width: 10px;
+	display: inline-block;
+	border: 2px solid #90c000;
+	padding: 4px 14px;
+	text-align: center;
+	text-decoration: none;
+	white-space: nowrap;
+	line-height: 18px;
+	background: url(../img/icon.gif) no-repeat 100% 14px;
+}
+
+.good15_buy {
+	margin-bottom: 20px;
+}
+
+.good15_buy dl dt {
+	width: 75px;
+	margin-right: 15px;
+}
+
+.good15_buy dl dt input {
+	border: 1px solid #cdcdcd;
+	width: 54px;
+	height: 50px;
+	box-sizing: border-box;
+	font: 400 24px/48px "Microsoft YaHei";
+	color: #626262;
+	text-align: center;
+	float: left;
+}
+
+.good15_buy dl dt a.up {
+	background: url(../img/detail_icon.png) 0 -52px no-repeat;
+}
+
+.good15_buy dl dt a.down {
+	background: url(../img/detail_icon.png) -20px -52px no-repeat;
+}
+
+.good15_buy dl dt a {
+	float: left;
+	width: 19px;
+	height: 25px;
+}
+
+
+
+.good15_today {
+	width: 70px;
+	margin-bottom: 25px;
+	background: #91c103 url(../img/icons1.gif) no-repeat;
+	border: 1px solid #91c103;
+	color: #fff;
+	line-height: 23px;
+	padding-right: 3px;
+	font-size: 12px;
+	text-indent: 28px;
+}
+
+.good15_prompt {
+	padding-bottom: 20px;
+	line-height: 18px;
+}
+
+.good15_prompt p {
+	color: #79a000;
+	font-size: 12px;
+}
+
+/* 商品推荐 */
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.box210 {
+	width: 210px;
+}
+
+.list15_record {
+	width: 208px;
+	border-top: 2px solid #8ab700;
+	border-left: 1px solid #efefe8;
+	border-right: 1px solid #efefe8;
+}
+
+.list15_record dl dt {
+	background-color: #fafafa;
+	color: #6b6b56;
+	font: 400 16px/35px "微软雅黑";
+	padding-left: 22px;
+}
+
+.list15_record dl dt a {
+	border: 1px solid #8ab700;
+	font: 400 12px/18px "微软雅黑";
+	color: #8ab700;
+	padding: 0 8px;
+	margin-left: 60px;
+}
+
+.list15_record dl dd {
+	border-bottom: 1px solid #efefe8;
+	padding: 10px;
+}
+
+.list15_record dl dd .pic img {
+	width: 70px;
+	height: 70px;
+	float: left;
+	margin-right: 5px;
+}
+
+.list15_record dl dd .name a {
+	float: left;
+	width: 110px;
+	height: 36px;
+	font: 400 12px/18px "Microsoft YaHei";
+	color: #3e4141;
+	margin-top: 5px;
+}
+
+.list15_record dl dd .price {
+	float: left;
+	color: #ff6900;
+	line-height: 26px;
+	font-size: 12px;
+}
+
+
+
+
+.box980 {
+	width: 980px;
+}
+
+.good15_compose {
+	padding-bottom: 15px;
+}
+
+.good15_compose dl dt {
+	background-color: #fafafa;
+	/* border-top: 2px solid #8ab700;
+	border-right: 1px solid #efefe7;
+	border-bottom: 1px solid #efefe7;
+	border-left: 1px solid #efefe7; */
+	border: 1px solid #efefe7;
+	border-top: 2px solid #8ab700;
+	height: 33px;
+}
+.good15_compose dl dt em {
+	position: relative;
+}
+.good15_compose dl dt em a {
+	width: 118px;
+	height: 44px;
+	line-height: 44px;	
+	color: #fff;
+	font-size: 14px;
+	font-style: initial;
+	text-align: center;
+	background: url(../img/detail_icon.png) right -194px no-repeat;
+	position: absolute;
+	top: -6px;
+	left: -1px;
+}
+
+.good15_compose .sku_box {
+	height: 230px;
+	width: 640px;
+	margin: 20px 0 20px 20px;
+}
+.good15_compose .sku_box img {
+	width: 97px;
+	height: 97px;
+}
+
+.good15_compose ul li .name {
+	height: 36px;
+	margin-top: 15px;
+	line-height: 18px;
+	font-size: 12px;
+}
+.good15_compose ul li .price {
+	color: #ff6900;
+	line-height: 28px;
+	text-align: center;
+}
+.good15_compose ul li input {
+	width: 20px;
+	height: 20px;
+}
+
+.good15_compose ul,ol{
+	float: left;
+}
+.good15_compose ul li {
+	float: left;
+	width: 120px;
+	text-align: center;
+}
+
+.good15_compose ul .plus {
+	width: 14px;
+	height: 14px;
+	margin: 45px 18px 0;
+	background: url(../img/icons2.gif) 0 -204px no-repeat;
+}
+
+.good15_compose ol {
+	width: 280px;
+	border-left: 1px solid #e7e7e7;
+	margin: 20px 0;
+	padding-top: 30px;
+}
+
+.good15_compose ol li {
+	margin-left: 50px;
+	height: 120px;
+}
+
+.good15_compose ol li p {
+	line-height: 20px;
+}
+
+.good15_compose ol li p span {
+	color: #ff6900;
+	font-weight: 700;
+}
+
+.good15_buy_btn a {
+	display: block;
+	height: 30px;
+	width: 122px;
+	background: url(../img/btn.gif) no-repeat 0 -212px;
+}
+
+
+.good15_detail {
+	background-color: #fafafa;
+	border-top: 2px solid #8ab700;
+	border-right: 1px solid #efefe7;
+	border-bottom: 1px solid #efefe7;
+	border-left: 1px solid #efefe7;
+}
+.good15_detail em {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	height: 34px;
+	width: 112px;
+}
+.good15_detail em a {
+	display: inline-block;
+	width: 108px;
+	height: 34px;
+	line-height: 34px;
+	padding: 5px 4px 0 0; 
+	color: #79a000;
+	font-style: initial;
+	font-size: 12px;
+	font-weight: 400;
+	text-align: center;
+}
+
+.good15_detail em a:hover,
+.good15_detail em a.on {
+	background: url(../img/detail_icon.png) right -194px no-repeat;
+	color: #fff;
+	font-size: 14px;
+	width: 108px;
+	height: 39px;
+	padding-top: 5px;
+	position: absolute;
+	top: -6px;
+	left: -1px;
+}
+
+.good15_all {
+	margin: 20px 0;
+}
+
+.good15_all img {
+	vertical-align: bottom;
+}

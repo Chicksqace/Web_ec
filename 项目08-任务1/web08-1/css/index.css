@@ -1,0 +1,253 @@
+
+/* 首页秒杀专区 */
+.countDown{
+	width: 190px;
+	height: 260px;
+	background: url(../images/msshike.png) no-repeat center 100px,url(../images/miaosha.png) no-repeat;
+	text-align: center;
+}
+.countDown-title{
+	margin:20px 0 100px 0;
+	font-size: 30px;
+	color: #fff;
+}
+.countDown-point,.countDown-time {
+	margin-bottom: 15px;
+	color: #fff;
+	font-size: 16px;
+}
+.countDown-time {
+	font-size: 20px;
+}
+.countDown-time span {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background-color: rgb(47, 52, 48);
+	line-height: 30px;
+	text-align: center;
+}
+.countDown-time b {
+	margin: 0 5px;
+	font-weight: normal;
+} 
+
+
+
+.speckillList {
+    position: relative;
+    width: 1010px;
+	overflow:hidden;
+	background: #fff;	
+}
+.speckillList-goods{
+	position:relative;	
+	left:0;	
+	width:1414px;
+}
+.speckillList-goods li {
+    float: left;
+    position: relative;	
+    width: 174px;
+    height: 236px;
+    padding: 24px 14px 0 14px;
+    text-align: center;
+    cursor: pointer;
+}
+.speckillList-goods li::after {
+    content: "";	
+    position: absolute;
+	display: inline-block;
+    right: 0;
+    top: 20px;	
+    width: 1px;
+    height: 200px;
+    text-align: center;
+    background: linear-gradient(180deg, white, #ddd, white);
+}
+.speckillList-goods li:last-child::after {
+    display: none;
+}
+.speckillList-goods img {
+    width: 174px;
+    height: 140px;
+}
+.speckillList-goods img:hover {
+    opacity: 0.85;
+}
+.spike-intr {
+    margin: 30px 0 10px 0;
+    width: 174px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+	color: #666666;
+    line-height: 14px;	
+}
+.speckillList-goods .price-now {
+    display: inline-block;	
+    width: 75px;
+    height: 22px;	
+    background: rgb(255, 128, 25);
+    font-weight: bold;
+    color: #fff;
+}
+.speckillList-goods .price-del {
+	display: inline-block;
+    width: 73px;
+    height: 20px;	
+    border: 1px rgb(255, 128, 25) solid;
+    font-size: 12px; 
+    color: #666666;	
+    text-decoration: line-through;	
+    line-height: 22px;
+}
+.speckillList-btn{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+    position: absolute;
+    top: 110px;
+    width: 20px;
+    height: 40px;	
+    background-color: rgb(0, 0, 0);
+    opacity: 0.2;	
+    text-align: center;	
+}
+.speckillList-btn:hover {
+    opacity: 0.4;
+}
+.speckillList-btn.prev{
+    left: 0;
+}
+.speckillList-btn.next{
+    right: 0;
+}
+.speckillList-btn i{
+	font-size:20px;	
+	color:#fff;
+} 
+
+
+/* 首页品牌专区 */
+
+.m-floor-title {
+	padding: 20px 0;
+	font-size: 28px;
+	font-weight: bold;
+	color: #333;
+	text-align: center;
+}
+.m-floor-title span {
+	display: inline-block;
+	width: 202px;
+	height: 28px;	
+	background: url(../images/title_icon.png) no-repeat;
+}
+
+.m-floor-con-title{
+	width: 210px;
+	height: 565px;
+	padding: 25px 0 0 20px;  
+	background: url(../images/prefecture01.png) no-repeat top center,
+	            url(../images/advertising01.png) no-repeat bottom center;
+	color:#666;
+}
+.m-floor-con-title h2 {
+	margin-bottom: 10px;	
+	font-size: 24px;
+	font-weight: bold;  
+	color: #333;
+}
+
+
+.m-floor-con-goods{
+	width:970px;
+}
+.m-floor-con-goods ul {
+  border-top: 1px solid #f4f4f4;
+}
+.m-floor-con-goods ul li {
+	float: left;
+	position: relative;
+	overflow: hidden;	
+	box-sizing: border-box;
+	width: 25%;
+	height: 297px;
+	padding: 30px 15px 0;	
+	border: 1px solid #f4f4f4;
+	border-left: none;
+	border-top: none;
+	text-align: center;
+	cursor: pointer;
+}
+.m-floor-con-goods ul li img {
+	margin-bottom: 10px;
+}
+.m-floor-con-goods ul li p {
+	height: 48px; 
+	margin-bottom: 15px;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+	color: #333;
+	text-align: justify;
+}
+.shopping-info {
+	display: inline-block;
+	position: absolute;
+	top: 24px;
+	left: 15px;
+	width: 212px;
+}
+.shopping-info span{
+	color: #ff8019;
+}
+.price-int {
+	font-size: 24px;
+	font-weight: bold;  
+}
+.shopping-info .tag{
+	display: inline-block;
+	width: 36px;
+	height: 16px;
+	line-height: 16px;
+	border: 1px solid #30b30e;
+    border-radius: 2px;
+	color: #30b30e;
+	margin-top:12px;
+}
+
+
+.shopping-cart {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 0px;
+	background: #ff8019;
+	line-height: 50px;
+}
+.shopping-cart i {
+	color: #FFFFFF;
+	font-size:20px ;
+}
+.shopping-cart span {
+	font-size: 16px;
+	color: #fff;
+}
+.m-floor-con-goods ul li:hover::before{
+	width: 237px;
+	height: 294px;
+	content:"";
+	display: inline-block;
+	border:2px solid #FF8019;
+	position: absolute;
+	left:0;
+	top:0;
+}
+.m-floor-con-goods ul li:hover .shopping-cart{
+	transition:1s;
+	height:50px;
+}

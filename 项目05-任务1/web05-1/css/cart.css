@@ -1,0 +1,300 @@
+
+/* 我的购物车 */
+.shopcart .search {
+  position: absolute;
+  top: 33px;
+  right: 0;
+  left: auto;
+}
+.my-cart,
+.cart-operation {
+  width: 100%;
+}
+.my-cart input{
+	width: 16px;
+	height: 16px;
+}
+.my-cart tr label {
+  position: relative;
+}
+.my-cart thead tr {
+  background: #f6f6f6;
+  border: 1px rgb(221, 221, 221) solid;
+}
+.my-cart thead tr th {
+  height: 48px;
+  line-height: 48px;
+  text-align: left;
+  color: #666666;
+  font-weight: normal;
+  font-size: 13px;
+}
+.my-cart thead tr th:nth-child(2){
+  padding-left: 20px;
+}
+.my-cart tbody tr td {
+  padding: 20px 0;
+  color: #666666;
+}
+.my-cart tbody tr td a,
+.my-cart tbody tr td a:hover {
+  color: #666666;
+}
+.my-cart tbody tr td:first-child,
+.my-cart thead tr th:first-child {
+  padding-left: 24px;
+}
+.my-cart tr label span {
+  padding-left: 30px;
+  line-height: 14px;
+  cursor: pointer;
+  font-weight: normal;
+  color: #535359;
+}
+.my-cart .name {
+  color: #333333;
+}
+.my-cart .cart-item {
+  border: 1px rgb(221, 221, 221) solid;
+  margin-bottom: 30px;
+}
+.my-cart .cart-item img {
+  padding-left: 30px;
+}
+.my-cart .cart-item .max,
+.my-cart .cart-item .min {
+  border: 1px rgb(221, 221, 221) solid;
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  float: left;
+  color: #666;
+  text-align: center;
+}
+.my-cart .cart-item .min.disabled{
+  cursor: no-drop;
+}
+.my-cart .cart-item .nums {
+  border-top: 1px rgb(221, 221, 221) solid;
+  border-bottom: 1px rgb(221, 221, 221) solid;
+  width: 43px;
+  height: 25px;
+  float: left;
+  text-align: center;
+}
+.my-cart .cart-item .size {
+  padding: 0 50px;
+}
+.my-cart .cart-item .title {
+  padding-left: 20px;
+}
+.my-cart .cart-item td:nth-child(6) {
+  color: #ff8019;
+  font-size: 16px;
+}
+.cart-operation {
+  margin: 30px 0 50px 0;
+}
+.cart-operation tr {
+  border: 1px rgb(221, 221, 221) solid;
+}
+.cart-operation tr td {
+  padding: 12px 0 !important;
+  color: #999;
+  font-size: 13px;
+}
+.cart-operation tr td:first-child {
+  padding-left: 24px !important;
+}
+.cart-operation tr td.total {
+  text-align: right;
+}
+.cart-operation tr td.pay {
+  text-align: center;
+  cursor: pointer;
+  background: #30b30e;
+}
+.cart-operation tr td.pay a {
+  color: #fff !important;
+}
+.cart-operation tr td.total {
+  padding-right: 25px !important;
+}
+.cart-operation tr td.total b {
+  font-size: 24px;
+  color: #ff8019;
+  font-weight: 500;
+}
+.cart-operation tr td.total span {
+  color: #ff8019;
+}
+.cart-operation tr label span {
+  color: #999;
+}
+.cart-operation tr a,
+.cart-operation tr a:hover {
+  color: #999 !important;
+}
+/* 注册 */
+
+/* 单选框、复选框开始 */
+.regist-box input[type='radio']{
+	position: relative;
+	width: 16px;
+	height: 16px;
+}
+.regist-box input[type='checkbox']{
+	position: relative;
+	width: 16px;
+	height: 16px;
+}
+.regist-box input[type='radio']:before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: 0px;
+    background: url(../images/icon.png) center no-repeat;
+    background-position: 0 -35px;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    border-radius: 50%;
+}
+.regist-box input[type='radio']:checked:before {
+    background-position: -45px -35px;
+}
+.regist-box input[type='checkbox']:before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: 0px;
+    background: url(../images/icon.png) center no-repeat;
+    background-position: 0 0;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+}
+.regist-box input[type='checkbox']:checked:before {
+    background-position: -45px 0;
+}
+.regist-box input[type='checkbox'], input[type='radio']{
+    margin: 0;
+    position: absolute;
+    top: 3px;
+    left: 0px;
+}
+/* 单选框、复选框结束 */
+.regist-box {
+  background: #f5f5f5;
+  padding: 30px 0 50px;
+}
+.regist-box .box1200 {
+  background-color: rgb(255, 255, 255);
+  width: 1200px;
+  padding: 24px 24px 80px 24px;
+}
+.regist-box .box1200 h3 {
+  font-size: 16px;
+  color: #333333;
+  line-height: 16px;
+  position: relative;
+  margin-bottom: 35px;
+}
+.regist-box .box1200 h3:before {
+  background-color: rgb(48, 179, 14);
+  width: 3px;
+  height: 16px;
+  content: "";
+  display: inline-block;
+  position: absolute;
+}
+.regist-box .box1200 h3 span {
+  padding-left: 12px;
+}
+.regist-box .box1200 form input[type="text"],
+.regist-box .box1200 form input[type="password"],
+.regist-box .box1200 form input[type="tel"],
+.regist-box .box1200 form select {
+  border: 1px rgb(204, 204, 204) solid;
+  border-radius: 2px;
+  width: 398px;
+  height: 38px;
+  margin-right: 20px;
+  padding: 0 10px;
+}
+.regist-box .layui-form-select {
+  width: 398px;
+  height: 38px;
+  margin-right: 20px;
+}
+.regist-box .layui-form-checkbox{
+  margin-left: 130px;
+}
+.regist-box .layui-input-block{
+  margin-left: 0;
+}
+.regist-box .box1200 form .layui-form-item > label {
+  width: 120px;
+  text-align: right;
+  margin-right: 10px;
+  position: relative;
+  padding: 0;
+}
+.regist-box .box1200 form .layui-form-item > label span {
+  padding-left: 20px;
+}
+.regist-box .box1200 form .layui-form-item > label::before {
+  content: "*";
+  font-weight: bold;
+  color: #ff0000;
+  display: inline-block;
+  margin-right: 4px;
+}
+.regist-box .box1200 form .layui-form-item {
+  align-items: center;
+  margin-bottom: 24px;
+  display: flex;
+}
+.regist-box .regist-btn {
+  margin-left: 130px;
+  background: #30b30e;
+  color: #fff;
+  border-radius: 2px;
+  background-color: rgb(48, 179, 14);
+  width: 160px;
+  height: 40px;
+  cursor: pointer;
+}
+.regist-box .box1200 form .layui-form-item.agree {
+  margin-left: 130px;
+  margin-top: 40px;
+}
+.regist-box .box1200 form .layui-form-item.agree label{
+  cursor: pointer;
+}
+.regist-box .box1200 form .layui-form-item.agree  label::before {
+  content: "";
+}
+.regist-box .box1200 form .layui-form-item.sex div label{
+    position: relative;
+    cursor: pointer;
+}
+.regist-box .box1200 form .layui-form-item.sex div label span{
+    padding-left: 10px;
+    margin-right: 24px;
+}
+.regist-box .form-group input:focus,.regist-box .form-group select:focus {
+    /* border-color: #5FB878!important; */
+}
+.regist-box .layui-form-item select{
+    color: #b2b2bf;
+}
+.regist-box .layui-form-item input::placeholder{
+    color: #b2b2bf;
+}
+.no-data{
+    display: none;
+    text-align: center;
+    margin: 100px 0;
+}
+

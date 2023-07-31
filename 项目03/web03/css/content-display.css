@@ -1,0 +1,101 @@
+
+p {
+	margin: 0;
+}
+a{
+	text-decoration: none;
+}
+button{
+	border: none;
+	outline: none;
+}
+/* logo、search、cart */
+.malltopbar {
+	height: 100px;
+}
+.malltopbar .logo {
+	display: inline-block; 
+	align-items: center;
+	background: url(../img/logo.png) no-repeat;
+}
+.malltopbar .logo div {
+	display: inline-block;
+	text-indent: 64px;
+	/* margin-left: 64px ; */
+	padding-top: 3px;
+}
+.malltopbar .logo div p {
+	color: #999999;
+	line-height: 14px;
+	margin-top: 5px;
+}
+.malltopbar .logo span {
+	color: #30b30e;
+	font-size: 30px;
+	letter-spacing: 4px;
+	font-weight: bold;
+}
+
+/* search */
+.search {
+	margin-left: 50px;
+	display: inline-block;
+	font-size:0 ;
+/* 	vertical-align: top;
+	margin-top: 20px; */
+	}
+.search input {
+	border: 2px rgb(48, 179, 14) solid;
+	background-color: rgb(255, 255, 255);
+	width: 498px;
+	height: 36px;
+	/* box-sizing: border-box; */
+	padding: 0px 15px;
+	vertical-align: middle;
+}
+.search button {
+	height: 40px;
+	line-height: 40px;
+	background-color: rgb(48, 179, 14);
+	width: 127px;
+	height: 40px;
+	color: #ffffff;
+	vertical-align: middle;
+}
+/* 购物车 */
+.cart {
+	border: 1px rgb(48, 179, 14) solid;
+	width: 138px;
+	height: 38px;
+	position: absolute;
+	right: 0;
+	top: 33px;
+	align-items: center;
+	padding-left: 25px;
+}
+.cart a>span {
+	color: #30b30e;
+	font-size: 12px;
+	margin-right: 12px;
+	line-height: 38px;
+}
+.cart img {
+	vertical-align: middle;
+}
+.cart-nums {
+	position: relative;
+	display: inline-block;
+}
+.cart-nums span {
+	position: absolute;
+	border-radius: 50%;
+	background-color: rgb(255, 128, 25);
+	top: -3px;
+	right: -10px;
+	color: #fff;
+	height: 15px;
+	width: 15px;
+	line-height: 15px;
+	text-align: center;
+	font-size: 12px;
+}

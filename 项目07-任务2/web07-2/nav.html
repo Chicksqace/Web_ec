@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.nav>li{
+				float: left;
+				list-style: none;
+				position: relative;
+				padding: 5px;
+			}
+			/* 对于子导航，需要设置绝对定位和隐藏 */
+			.subnav {
+				position: absolute;
+				left: -1px;
+				top: 30px;
+				width: 80px;
+				padding: 4px 24px 12px 24px;
+				border: 1px solid #e8e8ea;
+				border-top:none;
+				background: #fff;
+				display:none;
+			}
+			/* 设置当鼠标经过主导航项时显示该子导航 */
+			.nav>li:hover .subnav{
+				display: block;
+			}
+		</style>
+	</head>
+	<body>
+		<ul class="nav">
+			<li><a href="#">导航项1</a></li>
+			<li>
+				<a href="#">导航项2</a>
+				<ul class="subnav">
+					<li><a href="#">导航项2-1</a></li>
+					<li><a href="#">导航项2-2</a></li>
+					<li><a href="#">导航项2-3</a></li>
+				</ul>
+			</li>
+			<li><a href="#">导航项3</a></li>
+			<li><a href="#">导航项4</a></li>
+		</ul>
+
+	</body>
+</html>

@@ -1,0 +1,107 @@
+
+p {
+	margin: 0;
+}
+a{
+	text-decoration: none;
+}
+button{
+	border: none;
+	outline: none;
+}
+/* logo、search、cart */
+.malltopbar {
+	position: relative;
+	height: 144px;
+}
+.malltopbar .logo {
+	position: absolute;
+	top: 23px;
+	display: flex;
+	align-items: center;
+}
+.malltopbar .logo div p {
+	color: #999999;
+	line-height: 14px;
+	margin-top: 5px;
+}
+.malltopbar .logo div {
+	margin-left: 14px;
+	padding-top: 3px;
+}
+.malltopbar .logo span {
+	color: #30b30e;
+	font-size: 30px;
+	letter-spacing: 4px;
+	font-weight: bold;
+}
+
+/* search */
+.search {
+	position: absolute;
+	top: 33px;
+	left: 288px;
+}
+.search input {
+	border: 2px rgb(48, 179, 14) solid;
+	background-color: rgb(255, 255, 255);
+	width: 498px;
+	height: 40px;
+	box-sizing: border-box;
+	float: left;
+	padding: 0px 15px;
+}
+.search button {
+	height: 40px;
+	line-height: 40px;
+	background-color: rgb(48, 179, 14);
+	width: 127px;
+	height: 40px;
+	color: #ffffff;
+	float: left;
+	cursor: pointer;
+}
+
+/* 购物车 */
+.cart {
+	border: 1px rgb(48, 179, 14) solid;
+	width: 138px;
+	height: 38px;
+	position: absolute;
+	right: 0;
+	top: 33px;
+	align-items: center;
+	padding-left: 25px;
+}
+
+.cart a>span {
+	color: #30b30e;
+	font-size: 12px;
+	margin-right: 12px;
+	cursor: pointer;
+	line-height: 38px;
+}
+
+.cart img {
+	vertical-align: middle;
+}
+
+.cart-nums {
+	cursor: pointer;
+	position: relative;
+	display: inline-block;
+}
+
+.cart-nums span {
+	position: absolute;
+	border-radius: 50%;
+	background-color: rgb(255, 128, 25);
+	top: -3px;
+	right: -10px;
+	color: #fff;
+	height: 15px;
+	width: 15px;
+	line-height: 15px;
+	text-align: center;
+	font-size: 12px;
+}

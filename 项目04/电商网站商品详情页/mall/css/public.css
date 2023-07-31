@@ -1,0 +1,43 @@
+
+/* 公共样式定义 */
+*{margin:0;padding:0; -webkit-box-sizing: border-box;-moz-box-sizing: border-box; box-sizing: border-box;}
+h1,h2,h3,h4,h5,h6{font-weight:400}
+button,input,textarea{outline:0;border:0;font-family:Source Han Sans CN,sans-serif;-webkit-appearance:none}
+img{overflow:hidden;border:0;max-width: 100%;vertical-align: top;}
+a{-webkit-appearance:none;-webkit-tap-highlight-color:transparent;color: #333333;background-color: transparent; text-decoration: none;outline: none;cursor: pointer;-webkit-transition: color .3s;transition: color .3s;-webkit-text-decoration-skip: objects;}
+a:hover{color: #fe8117;text-decoration: none;}
+a:focus,a:hover{text-decoration: none;}
+ul li{list-style:none}
+body, html{width: 100%;height: 100%;}
+body{font-family:Source Han Sans CN,sans-serif;font-size: 14px;line-height: 24px;color: #292c35; background-color: #FFFFFF;min-width: 1240px;}
+table{border-collapse:collapse}
+input[type=radio],input[type=checkbox]{outline:none;}
+input[type=radio]:focus ,input[type=checkbox]:focus{ outline: none; }
+
+/* 页眉样式 */
+header{
+    height: 177px;
+    position: relative;
+    /* border-bottom: 1px solid #ddd; */
+}
+/* 顶部导航 */
+.navigation{background-color: #f2f2f2;line-height: 33px;border-bottom: 1px solid #e4e8eb;height: 33px;}
+/* banner */
+.banner{width: 100%;position: relative;}
+.banner .picList img{width: 100%;}
+
+/* 主体样式 */
+.wrapper{position: relative;}
+.content{width: 1200px;margin: 0 auto;}
+
+/* 页脚样式*/
+footer{
+	border-top: 2px solid #30b30e;
+}
+footer>.nav{background-color: #f4f4f4;min-height: 255px;}
+footer>.copyright{min-height: 115px;}
+
+
+.flex{
+    display: flex;
+}

@@ -1,0 +1,276 @@
+.clear::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+a{
+	color: #333333;
+}
+
+/*商品详情*/
+.path15 {
+  width: 1200px;
+  color: #959595;
+  line-height: 40px;
+}
+.goods-item {
+  display: flex;
+}
+
+.product-img img {
+  border: 1px solid #c9c9c9;
+  display: block; /* 此元素将显示为块级元素 */
+  margin: 0 3px 8px;
+  width: 82px;
+  height: 82px;
+}
+
+.showimg {
+  position: relative; /* 生成相对定位的元素，相对于其正常位置进行定位 */
+  width: 500px;
+  height: 500px;
+  border: 1px solid #f5f5f5;
+}
+.show {
+  width: 500px;
+  height: 500px;
+  border: 1px solid rgb(201, 201, 201);
+}
+.showbox {
+  position: absolute; 
+  /* 生成绝对定位的元素，相对于 static 定位以外的第一个父元素进行定位
+  (因父级元素设置了position:relative;  故此处相对于父级元素定位) */
+  top: 0;
+  left: 0;
+  cursor: move;
+  width: 175px;
+  height: 175px;
+  background: rgba(255, 255, 255, 0.4);
+  border: 1px solid rgb(201, 201, 201);
+  display: none; /* 显示方式为隐藏 */
+}
+.showlarge {
+  position: absolute;
+  overflow: hidden;
+  /* 当内容溢出元素框时hidden:内容会被修剪，
+  并且其余内容是不可见的 */
+  top: 0;
+  left: 510px; /* 此框相对父元素位移 */
+  width: 500px;
+  height: 500px;
+  border: 1px solid rgb(201, 201, 201);
+  display: none;
+  background: #fff;
+  z-index: 2;
+  /* 设置元素的堆叠顺序。拥有更高堆叠顺序的元素总是会处于堆叠顺序较低的元素的前面 */
+}
+.showlarge img {
+  width: 1000px;
+  height: 1000px;
+  position: absolute;
+  max-width: 950px;
+}
+
+.good15_intro {
+  width: 570px;
+  margin-left: 35px;
+}
+
+.good15_intro .intro_name h1 {
+  font: 800 18px/34px "Microsoft YaHei";
+  color: #4c4c4c;
+}
+.good15_intro .intro_name p {
+  font-size: 14px;
+  color: #ff6900;
+  line-height: 26px;
+}
+
+
+.good15_intro .intro_sales {
+  border-bottom: 1px solid #e0e0e0;
+  padding: 18px 0;
+}
+.intro_sales .intro_price {
+  margin: 0 0 18px;
+}
+.intro_sales .intro_price p span {
+  vertical-align: middle;
+}
+
+.intro_price .drop {
+  color: #fff;
+  font-size: 14px;
+  background-color: #ff6900;
+  line-height: 26px;
+  padding: 0 8px;
+  margin-right: 10px;
+ }
+.intro_price .price {
+  font: 800 26px/26px "Microsoft YaHei";
+  color: #ff6900;
+}
+.intro_price .o-price {
+  font: 800 16px/26px "Microsoft YaHei";
+  color: #4c4c4c;
+  margin-left: 10px;
+  text-decoration: line-through;
+}
+
+
+.good15_intro .intro_app dl {
+  width: 125px;
+  height: 26px;
+  position: relative;
+  z-index: 1;
+  background: #ff6900;
+  cursor: pointer;
+}
+.good15_intro .intro_app dl dt a {
+  width: 97px;
+  height: 26px;
+  font-size: 14px;
+  color: #fff;
+  padding-left: 28px;
+  line-height: 26px;
+  text-decoration: none;
+}
+.good15_intro .intro_app dl dd {
+  position: absolute;
+  left: 0;
+  top: 26px;
+  z-index: 20;
+  width: 220px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  text-align: center;
+  padding-bottom: 10px;
+  display: none;
+}
+.good15_intro .intro_app dl dd p {
+  background-color: #f4f4f4;
+  line-height: 30px;
+}
+.good15_intro .intro_app dl dd img{
+	width: 200px;
+}
+.good15_intro .intro_app:hover dd {
+  display: block;
+}  
+ /* 鼠标悬停在intro_app元素上时,dd元素显示 */
+
+.good15_intro .intro_gifts  {
+  margin-top: 10px;
+}
+.good15_intro .intro_gifts p{
+  width: 450px;
+  color: #4c4c4c;
+  line-height: 16px;
+  font-size: 12px;
+}
+.good15_intro .intro_gifts p span {
+  border: 1px solid #8ab700;
+  color: #8ab700;
+  line-height: 14px;
+  width: 48px;
+  text-align: center;
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+.good15_norm {
+  margin-top: 15px;
+  font-size: 12px;
+}
+.good15_norm dl {
+  padding-bottom: 10px;
+}
+.good15_norm dl dt {
+  float: left;
+  width: 65px;
+  color: #4c4c4c;
+  line-height: 30px;
+}
+.good15_norm dl dd {
+  float: right;
+  width: 505px;
+  color: #4c4c4c;
+  line-height: 30px;
+}
+.good15_norm dl dd ul li {
+  display: inline-block;
+  padding: 1px;
+  margin: 0 10px 10px 0;
+}
+.good15_norm dl dd ul li a {
+  min-width: 10px; /* 最小宽度 */
+  border: 1px solid #e5e5e5;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap; /* 设置文本不会换行 */
+  line-height: 18px;
+  color: #626252;
+}
+
+.good15_norm dl dd ul a.propon {
+  min-width: 10px; /* 最小宽度 */
+  border: 2px solid #90c000;
+  padding: 4px 14px;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  line-height: 18px;
+  background: url(../img/icon.gif) no-repeat 100% 14px;
+}
+
+.good15_buy {
+  margin-bottom: 20px;
+}
+.good15_buy dl dt {
+  width: 75px;
+  margin-right: 15px;
+}
+.good15_buy dl dt input {
+  border: 1px solid #cdcdcd;
+  width: 54px;
+  height: 50px;
+  box-sizing: border-box;
+  font: 400 24px/48px "Microsoft YaHei";
+  color: #626262;
+  text-align: center;
+  float: left;
+  }
+.good15_buy dl dt a {
+  float: left;
+  width: 19px;
+  height: 25px;
+}
+.good15_buy dl dt a.up {
+  background: url(../img/detail_icon.png) 0 -52px no-repeat;
+}
+.good15_buy dl dt a.down {
+  background: url(../img/detail_icon.png) -20px -52px no-repeat;
+}
+
+
+.good15_today {
+  width: 70px;
+  margin-bottom: 25px;
+  background: #91c103 url(../img/icons1.gif) no-repeat;
+  border: 1px solid #91c103;
+  color: #fff;
+  line-height: 23px;
+  padding-right: 3px;
+  font-size: 12px;
+  text-indent: 28px;
+}
+
+.good15_prompt {
+  padding-bottom: 20px;
+  line-height: 18px;
+}
+.good15_prompt p {
+  color: #79a000;
+  font-size: 12px;
+}

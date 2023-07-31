@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>购物车</title>
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="css/header.css"/>
+		<link rel="stylesheet" href="css/cart.css">
+	</head>
+
+	<body>
+		<header>
+			<div class="wrap">
+				<div class="logo">
+					<h1><a href="">乡农甄</a></h1>
+					<h2>家乡甄选农产品</h2>
+				</div>
+			</div>
+		</header>
+		<!-- 主体 -->
+		<div class="wrap">
+			<div class="cart-title clearfix">
+				<h2 class="fl">Collection 我的购物车</h2>
+				<div class="fr">
+					配送至：<a href="#" class="cart-title-address">杭州市西湖区平海路[点击切换]</a>
+				</div>
+			</div>
+			<table class="cart-tb">
+				<colgroup>
+					<col><col><col><col><col><col><col>
+				</colgroup>
+				<thead>
+					<tr>
+						<th class="cart-tb-ck cart-tb-title">
+							<input type="checkbox" name="checkAll" id="checkAll"/>
+							<label for="checkAll">全选</label>
+						</th>
+						<th colspan="2" class="cart-tb-title">商品信息</th>
+						<th width="158" class="cart-tb-price cart-tb-title" >单价（元）</th>
+						<th width="120" class="cart-tb-quantity cart-tb-title">数量</th>
+						<th width="110" class="cart-tb-sum cart-tb-title">金额（元）</th>
+						<th width="72" class="cart-tb-action cart-tb-title">操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="shopname">
+						<td colspan="7">
+							<input type="checkbox" name="checkshop" id="checkshop"/>
+							<label for="checkshop">品优水果基地</label>
+						</td>
+					</tr>
+					<tr class="cart-item">
+						<td class="cart-tb-ck">
+							<input type="checkbox" name="det" id="sp111"/>
+							<a href="#"><img src="images/goods1.jpg" alt="商品图片" width="95" />
+							</a>
+						</td>
+						<td class="cart-tb-name">
+							佳沛新西兰阳光金奇异果
+						</td>
+						<td class="cart-tb-size">
+							规格：20粒纪念版
+						</td>
+						<td class="cart-tb-price">￥179.00</td>
+						<td class="cart-tb-quantity">
+							<input type="number" value="1" min="1" class="num2"/>
+						</td>
+						<td class="cart-tb-sum">￥179.00</td>
+						<td class="cart-tb-action"><a href="javascript:void(0);" class="delete">删除</a></td>
+					</tr>
+					<tr class="cart-item">
+						<td class="cart-tb-ck">
+							<input type="checkbox" name="det" id="sp111"/>
+							<a href="#"><img src="images/commodity06.png" alt="商品图片" width="95" />
+							</a>
+						</td>
+						<td class="cart-tb-name">
+							泰国进口山竹 5A级大果 净重1.5kg
+						</td>
+						<td class="cart-tb-size">
+							规格：净重1.5kg一箱
+						</td>
+						<td class="cart-tb-price">￥99.00</td>
+						<td class="cart-tb-quantity">
+							<input type="number" value="1" min="1" class="num2"/>
+						</td>
+						<td class="cart-tb-sum">￥99.00</td>
+						<td class="cart-tb-action"><a href="javascript:void(0);" class="delete">删除</a></td>
+					</tr>
+					<tr class="shopname">
+						<td colspan="7">
+							<input type="checkbox" name="checkshop" id="checkshop"/>
+							<label for="checkshop">多鲜生生鲜市场</label>
+						</td>
+					</tr>
+					<tr class="cart-item">
+						<td class="cart-tb-ck">
+							<input type="checkbox" name="det" id="sp111"/>
+							<a href="#"><img src="images/commodity11.png" alt="商品图片" width="95" />
+							</a>
+						</td>
+						<td class="cart-tb-name">
+							 淡水龙利鱼柳 新鲜无刺无骨鱼肉</p>
+						</td>
+						<td class="cart-tb-size">
+							规格：巴沙鱼片5斤装
+						</td>
+						<td class="cart-tb-price">￥278.00</td>
+						<td class="cart-tb-quantity">
+							<input type="number" value="1" min="1" class="num2"/>
+						</td>
+						<td class="cart-tb-sum">￥278.00</td>
+						<td class="cart-tb-action"><a href="javascript:void(0);" class="delete">删除</a></td>
+					</tr>
+				</tbody>
+			</table>
+	<div class="sumbox clearfix">
+		<div class="fl">
+			<input type="checkbox" name="checkAll" id="checkAll"/>
+			<label for="checkAll">全选</label>
+			<a href="javascript:;">删除选中的商品</a>
+		</div>
+		<div class="fr">
+			<div class="amount-sum">已选商品 <em>1</em> 件</div>
+			<div class="price-sum">合计（不含运费）：<strong class="sum-price">￥179.00</strong></div>
+			<a href="javascript:void(0)" id="btnbuy" class="buy-btn">结&nbsp;算</a>
+		</div>
+	</div>
+		</div>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/cart.js"></script>
+	</body>
+</html>

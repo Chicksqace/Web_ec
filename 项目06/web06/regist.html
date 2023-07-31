@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>新用户注册</title>
+		<link rel="stylesheet" href="css/public.css">
+		<link rel="stylesheet" type="text/css" href="css/regist.css" />
+	</head>
+	<body >
+		<div class="reg-form-box box1200">
+			<h2>Regist-会员基本信息</h2>
+			<form action="" method="post" name="regform">
+				<div class="form-item">
+					<label class="form-label" for="userID">会员名称：</label>
+					<input type="text" placeholder="6位以上字母或数字组合，字母区分大小写" name="userID" id="userID">
+				</div>
+				<div class="form-item">
+					<label class="form-label" for="username">真实姓名：</label>
+					<input type="text" placeholder="请填写你的真实姓名" name="username" id="username">
+				</div>
+				<div class="form-item">
+					<label class="form-label">性别：</label>
+					<input type="radio" name="sex" value="先生" title="先生" checked id="rd-male">
+					<label class="sex-label" for="rd-male">先生</label>
+					<input type="radio" name="sex" value="女士" title="女士" id="rd-female" />
+					<label class="sex-label" for="rd-female">女士</label>
+				</div>
+				<div class="form-item">
+					<label class="form-label" for="pswd">登录密码：</label>
+					<input type="password" placeholder="6位以上字母或数字组合，字母区分大小写" name="pswd" id="pswd">
+				</div>
+				<div class="form-item">
+					<label class="form-label" for="repswd">确认密码：</label>
+					<input type="password" placeholder="请再次输入您的登录密码" name="repswd" id="repswd">
+				</div>
+				<div class="form-item">
+					<label class="form-label" for="phone">联系电话：</label>
+					<input type="tel" placeholder="请输入联系电话" name="phone" id="phone">
+				</div>
+				<div class="form-item">
+					<label class="form-label" for="email">电子邮箱：</label>
+					<input type="text" placeholder="请输入电子邮箱" name="email" id="email">
+				</div>
+				<div class="form-item">
+					<label class="form-label" for="email">地址：</label>
+					<select name="province">
+						<option value="">请选择省市区</option>
+						<option value="浙江省">浙江省</option>
+						<option value="江西省">江西省</option>
+						<option value="福建省">福建省</option>
+					</select>
+					<input type="text" placeholder="请输入详细地址" name="address" id="address" class="noleft">
+				</div>
+				<div class="form-item">
+					<input type="checkbox" name="agree" id="agree" checked class="noleft">
+					<label for="agree">我已阅读并同意《用户注册协议》</label>
+				</div>
+				<div class="form-item">
+					<button type="submit" class="btn regist-btn noleft">免费注册</button>
+				</div>
+			</form>
+		</div>
+
+	</body>
+</html>

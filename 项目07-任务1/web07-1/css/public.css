@@ -1,0 +1,52 @@
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, th, td, form, button, input, textarea, option{
+    margin: 0;
+    padding: 0;
+}
+li{list-style:none;}
+
+button, input, select, textarea {
+    outline: none;
+    border:0;
+}
+a{
+	color:#333;
+	text-decoration:none;
+}
+table{ border-collapse: collapse;}
+/* 样式重置 */
+
+
+.wrap{
+	width: 1180px;
+	margin:0 auto;
+}
+.fl{float:left;}
+.fr{float:right;}
+.clearfix::after {
+    content: "";
+    display: block;
+	clear: both;
+}
+
+h1,h2,h3,h4,h5,h6{font-weight:400}
+em{font-style: normal;}
+body,button, input, select, textarea {
+    font: 14px/1.5 Source Han Sans CN,sans-serif;
+}
+body{
+    color: #292c35;
+    background: #fff;
+}
+.w-210{width:210px;}
+.w-980{width:980px;}
+.box-8ab700{
+	border:1px solid #efefe8;
+	border-top: 2px solid #8ab700;
+}
+.text-b{
+	color: #ff6900;
+	font-weight: 700;
+}
+.d-none{
+	display:none;
+}
